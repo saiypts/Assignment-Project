@@ -11,29 +11,35 @@ nav{
     height:10vh;
     display:flex;
 }
-
+input[type=checkbox]{
+    display:none;
+}
+.hamburger{
+    display:none;
+    font-size: 24px;
+    user-select: none;
+}
 .home{
     height:10vh;
     background-color:white;
     display: flex;
-    justify-content: center;
-    gap:60px;
+    gap:50px;
     align-items: center;
-    flex-grow: 1;
+    margin-left:150px;
     
 }
-.home-items{
-    height:5vh;
-    background-color:white;
-    display: flex;
-    padding-right: 20px;
-    padding-top: 18px;
-    gap:12px;
-}
-.dropdown{
-    display: none;
+    .home-items{
+        
+            height: 7vh;
+            background-color: white;
+            display: flex;
+            gap: 12px;
+            padding-top: 10px;
+            padding-left: 300px;
+        
+    }
     
-}
+   
 .sai{
     background-image: linear-gradient(to right,rgb(219, 77, 134),yellow);
     height:100vh;
@@ -159,35 +165,44 @@ nav{
     margin-top: 220px;
     bottom:50px;
 }
-@media screen and (max-width:882px){
+@media(max-width:882px){
     .home{
-        display: none;
+        display:none;
+        position:absolute;
+      /* background-color:yellow;*/
+        z-index:2;
+        right:0;
+        left:0;
+        padding:10px 10px;
+        margin:0;
     }
-    .dropdown{
-    display: flex;
-    height:4vh;
-    background-color:white;
-    padding-top: 18px;
-    position: sticky;
-    left:30px;
+    .home li:hover{
+        display:inline-block;
+        background-color:red;
+        transition: 0.3s ease;
     }
-    .home-items{
-        height:4vh;
-        right:0px;
-        position: sticky;
-        display: flex;
-    height:4vh;
-    background-color:white;
-    padding-top: 18px;
-    position: sticky;
-    right:12px;
+    .home li+li{
+        margin-top: 12px;
     }
-    nav{
-        display: flex;
-    justify-content: space-between;
+    input[type=checkbox]:checked~.home{
+        display:block;
+    }
+    .hamburger{
+        display:block;
+        padding-top:15px;
+        position:sticky;
+    }
 
+}
+@media screen and (max-width:882px){
+    .home-items{
+        display: flex;
+     height:4vh;
+     background-color:white;
+     padding-top: 18px;
+     position: sticky;
     }
-} 
+}
 
 @media screen and (max-width: 1095px) {
     .container{
@@ -226,9 +241,7 @@ nav{
     .dropdown{
         left:0px;
     }
-    nav{display: flex;
-    justify-content: space-between;
-}
+   
 }
 @media screen and (max-width:412px) {
     .sai{
@@ -251,8 +264,15 @@ nav{
     position: sticky;
     right:12px;  
     }
-    nav{
-        display: flex;
-    justify-content: space-between;
-}
+    .hamburger{
+        display:block;
+        padding-top:15px;
+        position:sticky;
     }
+    li{
+        color:red;
+        padding:0;
+    }
+}
+
+
