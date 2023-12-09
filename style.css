@@ -165,24 +165,34 @@ nav{
     }
     .dropdown{
     display: flex;
-    height:3vh;
+    height:4vh;
     background-color:white;
     padding-top: 18px;
     position: sticky;
-    left:40px;
-    }
-    nav{
-       gap:600px;
+    left:30px;
     }
     .home-items{
-        height:3vh;
-        right:100px;
+        height:4vh;
+        right:0px;
         position: sticky;
+        display: flex;
+    height:4vh;
+    background-color:white;
+    padding-top: 18px;
+    position: sticky;
+    right:12px;
     }
-    
+    nav{
+        display: flex;
+    justify-content: space-between;
+
+    }
 } 
 
 @media screen and (max-width: 1095px) {
+    .container{
+        width:100%;
+    }
     .items {
         flex-direction: column; 
         gap: 20px; 
@@ -203,13 +213,22 @@ nav{
         width:250px;
     }
     .home-items{
-        height:3vh;
+        height:4vh;
         right:0px;
         position: sticky;
+        display: flex;
+    height:4vh;
+    background-color:white;
+    padding-top: 18px;
+    position: sticky;
+    right:12px;
     }
     .dropdown{
         left:0px;
     }
+    nav{display: flex;
+    justify-content: space-between;
+}
 }
 @media screen and (max-width:412px) {
     .sai{
@@ -220,12 +239,20 @@ nav{
     .box{
         width:200px;
         left:0px;
-      
-
+        padding:25px;
     }
     .home-items{
-        height:3vh;
+        height:4vh;
         position: sticky;
-        right:350px;
+        display: flex;
+    height:4vh;
+    background-color:white;
+    padding-top: 18px;
+    position: sticky;
+    right:12px;  
     }
+    nav{
+        display: flex;
+    justify-content: space-between;
 }
+    }
