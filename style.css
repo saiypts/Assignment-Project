@@ -209,6 +209,9 @@ input[type=checkbox]{
      padding-top: 18px;
      position: sticky;
     }
+    .animal{
+        left:50%;
+    }
 }
 
 @media screen and (max-width: 1095px) {
@@ -227,7 +230,7 @@ input[type=checkbox]{
     .animal {
         width: 70px; 
         height: 30px; 
-        left: 50%; 
+        left: 50%;
         transform: translateX(-50%);
         
     }
@@ -285,6 +288,15 @@ input[type=checkbox]{
     .home{
         margin-left:20px;
     }
+    .animal{
+        left:50%;
+    }
 }
 
+    @media screen and (max-width:1500px){
+        .animal{
+            left:50%;
+        }
+    }
+        
     
