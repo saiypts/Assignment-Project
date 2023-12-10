@@ -11,12 +11,15 @@ nav{
     height:10vh;
     display:flex;
 }
+.nav-links{
+    width:100vw;
+}
 input[type=checkbox]{
     display:none;
 }
 .hamburger{
     display:none;
-    font-size: 24px;
+    font-size: 40px;
     user-select: none;
 }
 .home{
@@ -35,7 +38,7 @@ input[type=checkbox]{
             display: flex;
             gap: 12px;
             padding-top: 10px;
-            padding-left: 300px;
+            
         
     }
     
@@ -175,6 +178,7 @@ input[type=checkbox]{
         left:0;
         padding:10px 10px;
         margin:0;
+        height:50vh;
     }
     .home li:hover{
         display:inline-block;
@@ -274,5 +278,29 @@ input[type=checkbox]{
         padding:0;
     }
 }
+@media screen and (max-width:1120px){
+    .home-items{
+        padding-left: 0%;
+    }
+    .home{
+        margin-left:20px;
+    }
+}
+
+/*@media screen and (max-width: 768px) {
+    .home-items {
+        padding-left: 10px; 
+        justify-content: flex-end; 
+    }
+}
 
 
+.home-items img {
+    width: 30px; 
+    height: 30px; 
+}
+
+
+.home-items img + img {
+    margin-left: 10px;
+}*/
