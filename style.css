@@ -4,7 +4,7 @@
     
 }
 html{
-    font-size:20px;
+    font-size:16px;
 }
 nav{
     background-color:white;
@@ -28,12 +28,15 @@ input[type=checkbox]{
     display: flex;
     gap:50px;
     align-items: center;
-    margin-left:150px;
+    margin-left:15%;
+    list-style-type: none;
     
 }
-.home > a:hover{
-    color:green;
+a{
+    text-decoration: none;
 }
+
+
     .home-items{
         
             height: 7vh;
@@ -49,6 +52,7 @@ input[type=checkbox]{
 .sai{
     background-image: linear-gradient(to right,rgb(219, 77, 134),yellow);
     height:100vh;
+   
 }
 
 .banner{
@@ -70,7 +74,7 @@ input[type=checkbox]{
 }
 
 .tit{
-    font-size: 40px;
+    font-size: 25px;
     font-weight: bold;
     font-family: sans-serif;
     margin-bottom: 10px;
@@ -181,7 +185,7 @@ input[type=checkbox]{
         left:0;
         padding:10px 10px;
         margin:0;
-        height:30vh;
+        height:200px;
     }
     .home li:hover{
         display:inline-block;
@@ -196,7 +200,7 @@ input[type=checkbox]{
     }
     .hamburger{
         display:block;
-        padding-top:15px;
+       /* padding-top:15px;*/
         position:sticky;
     }
 
@@ -212,6 +216,9 @@ input[type=checkbox]{
     .animal{
         left:50%;
     }
+    .home{
+        margin-left:0;
+    }
 }
 
 @media screen and (max-width: 1095px) {
@@ -219,7 +226,7 @@ input[type=checkbox]{
         width:100%;
     }
     .items {
-        flex-direction: column; 
+        flex-wrap: wrap; 
         gap: 20px; 
         align-items: center;
         padding-top: 30px; 
@@ -235,7 +242,7 @@ input[type=checkbox]{
         
     }
     .box{
-        width:250px;
+        width:250px;;
     }
     .home-items{
         display: flex;
@@ -286,7 +293,7 @@ input[type=checkbox]{
         padding-left: 0%;
     }
     .home{
-        margin-left:20px;
+        margin-left:15%;
     }
     .animal{
         left:50%;
