@@ -52,11 +52,12 @@ a{
 .sai{
     background-image: linear-gradient(to right,rgb(219, 77, 134),yellow);
     height:100vh;
-   
+    width:100vw;
+    box-sizing: border-box;
 }
 
 .banner{
-    height:85vh;
+    height:85%;
     width:100vw;
     background-image: url("./assets/img1.jpg");
     background-size: 100% 100%;
@@ -90,7 +91,6 @@ a{
 .container{
     background-image: linear-gradient(to right,rgb(219, 77, 134),yellow);
     width:100vw;
-   
     box-sizing: border-box;
 }
 .order-now{
@@ -102,6 +102,7 @@ a{
     font-size: 50px;
     color:white;
     letter-spacing:5px;
+    padding-top:40px;
 }
 .items{
     height:10%;
@@ -200,8 +201,9 @@ a{
     }
     .hamburger{
         display:block;
-       /* padding-top:15px;*/
+      /* padding-top:10%;*/
         position:sticky;
+      /* padding-left:10px;*/
     }
 
 }
@@ -216,14 +218,14 @@ a{
     .animal{
         left:50%;
     }
-    .home{
-        margin-left:0;
-    }
 }
 
 @media screen and (max-width: 1095px) {
     .container{
         width:100%;
+    }
+    .html{
+        font-size: 20px;
     }
     .items {
         flex-wrap: wrap; 
@@ -242,7 +244,7 @@ a{
         
     }
     .box{
-        width:250px;;
+        width:250px;
     }
     .home-items{
         display: flex;
@@ -252,35 +254,29 @@ a{
     position: sticky;
     right:12px;
     }
-    .dropdown{
-        left:0px;
-    }
    
 }
 @media screen and (max-width:412px) {
     .sai{
         width:100vw;
         box-sizing: border-box;
-        padding:0
+        padding:0;
     }
     .box{
         width:200px;
-        left:0px;
         padding:25px;
     }
     .home-items{
         height:4vh;
         position: sticky;
         display: flex;
-    height:4vh;
-    background-color:white;
-    padding-top: 18px;
-    position: sticky;
-    right:12px;  
+        background-color:white;
+        padding-top: 18px;
+        right:12px;  
     }
     .hamburger{
         display:block;
-        padding-top:15px;
+       /* padding-top:15px;*/
         position:sticky;
     }
     li{
@@ -293,7 +289,7 @@ a{
         padding-left: 0%;
     }
     .home{
-        margin-left:%;
+        margin-left:0%;
     }
     .animal{
         left:50%;
@@ -307,3 +303,7 @@ a{
     }
         
     
+    body {
+        overflow-x: hidden; 
+        overflow-y: auto;  
+    }
